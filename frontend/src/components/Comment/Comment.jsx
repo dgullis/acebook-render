@@ -1,5 +1,5 @@
 import './Comment.css'
-import timeFromNow from '../../utils/TimeFromNow'
+import timeFromNow from "../../utils/timeFromNow.jsx"
 import { Link } from 'react-router-dom'
 
 export default function Comment({key, _id, message, likes, postedBy, postedAt, user}) {

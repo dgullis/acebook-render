@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
 const connectToDatabase = async () => {
-  const mongoDbUrl = process.env.MONGODB_URL;
+  const mongoDbUrl = "mongodb+srv://danielgullis1:mongomongomongo1001@cluster0.l9lxqr1.mongodb.net/?retryWrites=true&w=majority"
+
 
   if (!mongoDbUrl) {
     console.error(

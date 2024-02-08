@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const connectToDatabase = async () => {
-  const mongoDbUrl = "mongodb+srv://danielgullis1:mongomongomongo1001@cluster0.l9lxqr1.mongodb.net/?retryWrites=true&w=majority"
+  const mongoDbUrl = "mongodb+srv://danielgullis1:8tX1wuYTLpO9tw7I@cluster0.l9lxqr1.mongodb.net/?retryWrites=true&w=majority"
 
 
   if (!mongoDbUrl) {

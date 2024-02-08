@@ -3,8 +3,7 @@ const crypto = require('crypto');
 const User = require('../models/user');
 const Post = require('../models/post');
 
-mongoose.connect("mongodb+srv://danielgullis1:QlVe2Y1C7pK7rp0V@cluster0.l9lxqr1.mongodb.net/?retryWrites=true&w=majority"
-, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://danielgullis1:8tX1wuYTLpO9tw7I@cluster0.l9lxqr1.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
 
 async function seedDatabase() {
 

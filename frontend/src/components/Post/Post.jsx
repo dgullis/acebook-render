@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import AddComment from "../AddComment/AddComment";
 import Comment from "../Comment/Comment";
 import DeleteButton from "../DeleteButton/DeleteButton";
-import timeFromNow from "../../utils/TimeFromNow";
+import timeFromNow from "../../utils/TimeFromNow.jsx";
 import { Link } from "react-router-dom";
 
 const Post = (props) => {

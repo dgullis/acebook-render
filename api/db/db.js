@@ -1,8 +1,13 @@
 const mongoose = require("mongoose");
 
 const connectToDatabase = async () => {
-  const mongoDbUrl = "mongodb+srv://danielgullis1:8tX1wuYTLpO9tw7I@cluster0.l9lxqr1.mongodb.net/?retryWrites=true&w=majority"
+  const mongoDbUrl = "mongodb+srv://danielgullis1:2WjtZSaxQcQ1xHzH@cluster0.zwrd5gm.mongodb.net/?retryWrites=true&w=majority"
 
+  const connectionParams={
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
+  }
 
   if (!mongoDbUrl) {
     console.error(
@@ -11,7 +16,7 @@ const connectToDatabase = async () => {
     throw new Error("No connection string provided");
   }
 
-  await mongoose.connect(mongoDbUrl);
+  await mongoose.connect(mongoDbUrl, connectionParams);
 
   if (process.env.NODE_ENV !== "test") {
     console.log("Successfully connected to MongoDB");

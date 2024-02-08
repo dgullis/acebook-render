@@ -7,7 +7,7 @@ import Navbar from "../../components/NavBar/navbar";
 import Post from "../../components/Post/Post";
 import Friends from "../../components/Friends/Friends";
 import Notification from "../../components/Notification/Notification";
-import "./Userpage.css"
+import "./UserPage.css"
 
 
 export const UserPage = () => {
